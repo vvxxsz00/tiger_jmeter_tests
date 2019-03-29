@@ -1,0 +1,14 @@
+jmeter:
+  path: /opt/tiger/software/jmeter/3.2/bin/jmeter
+  libs_path: /opt/tiger/software/jmeter/3.2/lib/ext
+  properties: sample.properties
+  plan: ../../plan/jmeter/sample.jmx
+  JVM_ARGS: -server -verbose:gc -Xloggc:/opt/tiger/logs/gc_log_tiger.log -XX:+PrintTenuringDistribution -XX:+PrintGCDetails -XX:+PrintGCDateStamps 
+  per_LG_KPI_analysis_enabled: false # per-LG KPI analysis will be disabled too
+  cmd_options:
+    target_host: www.epam.com
+    target_port: 443
+    user_number_read: 5
+    duration: 120
+
+red_threshold: 10 # allowed red threshold violations in % for the samplers checks 
