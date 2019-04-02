@@ -1,7 +1,7 @@
 properties: sample.properties
 plan: sample.jmx
 JVM_ARGS: -server -verbose:gc -Xloggc:/opt/tiger/logs/gc_log_tiger.log -XX:+PrintTenuringDistribution -XX:+PrintGCDetails -XX:+PrintGCDateStamps 
-cmd_options:
+jmeter_args:
   target_host: www.epam.com
   target_port: 443
   user_number_read: 3
