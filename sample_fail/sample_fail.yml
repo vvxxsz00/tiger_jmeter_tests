@@ -1,0 +1,9 @@
+properties: sample_fail.properties
+plan: sample_fail.jmx
+JVM_ARGS: -Xms64M -Xmx256M -server -verbose:gc -Xloggc:/opt/tiger/logs/gc_log_tiger.log -XX:+PrintTenuringDistribution -XX:+PrintGCDetails -XX:+PrintGCDateStamps 
+jmeter_args:
+  target_host: www.google.com
+  target_port: 443
+  user_number_read: 3
+  duration: 120
+red_threshold: 30 # allowed red threshold violations in % for the samplers checks 

@@ -1,0 +1,5 @@
+sampler_label,scope_name,yellow_threshold,red_threshold
+T100_Homepage,aggregate_report_median,50,100
+.*,aggregate_report_90%_line,100,200
+.*,aggregate_report_error%,10.1,59.9
+^/about,aggregate_report_max,100,200
