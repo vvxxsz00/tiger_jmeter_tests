@@ -4,7 +4,7 @@ JVM_ARGS: -Xms64M -Xmx256M -server -verbose:gc -Xloggc:/opt/tiger/logs/gc_log_ti
 jmeter_args:
   target_host: www.epam.com
   target_port: 443
-  user_number_read: 3
-  duration: 120
+  user_number_read: 10
+  duration: 300
 red_threshold: 10 # allowed red threshold violations in % for the samplers checks 
  
