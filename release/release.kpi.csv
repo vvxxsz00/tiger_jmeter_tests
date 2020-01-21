@@ -1,4 +1,4 @@
 sampler_label,scope_name,yellow_threshold,red_threshold
 T110_View_Post,aggregate_report_max,100,200
 T100_Open_HomePage,aggregate_report_median,50,100
-any,aggregate_report_error%,10.1,59.9
+.*,aggregate_report_error%,10.1,59.9
